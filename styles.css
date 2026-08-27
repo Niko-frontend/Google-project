@@ -1,0 +1,109 @@
+@import url(./normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,-50..200;1,17..18,400..700,-50..200&display=swap');
+
+body {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 14px;
+}
+
+/* --- Header --- */
+
+.header {
+
+}
+
+/* --- Header__section --- */
+
+.header__section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header__logo {
+
+}
+
+.letter-g {
+    fill: #3186ff;
+}
+
+.letter-o {
+    fill: #fc413d;
+}
+
+.letter-o2 {
+    fill: #ffbe00;
+}
+
+.letter-g2 {
+    fill:  #3186ff;
+}
+
+.letter-l {
+    fill: #00af57;
+}
+
+.letter-e {
+    fill: #fc413d;
+}
+
+.header__form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    position: relative;
+}
+
+.header__search {
+    padding-left: 20px;
+    border: 1px solid gray;
+    width: 624px;
+    height: 52px;
+    border-radius: 25px;
+    opacity: 0.4;
+}
+
+.header__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+}
+
+.header__stick {
+    height: 30px;
+    width: 1px;
+    margin: auto 5px;
+    background-color: gray;
+    opacity: 0.4;
+}
+
+.header__button {
+    background-color: transparent;
+    padding: 0 8px;
+    border: none;
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header__icon {
+    opacity: 0.7;
+    width: 24px;
+    height: 24px;
+}
+
+.header__tools {
+    display: flex;
+}
+
+/* --- Header__nav --- */
+
