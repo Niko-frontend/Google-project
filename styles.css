@@ -7,23 +7,36 @@ body {
     font-size: 14px;
 }
 
+.container {
+    margin-left: 150px;
+}
+
 /* --- Header --- */
 
 .header {
 
 }
 
+.header__ceil {
+    height: 16px;
+}
+
+.header__strip {
+    opacity: 0.4;
+    margin: 0;
+}
+
 /* --- Header__section --- */
 
 .header__section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
+    padding: 10px 0;
 }
 
 .header__logo {
-
+    padding: 4px 44px 0 12px;
 }
 
 .letter-g {
@@ -54,17 +67,18 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-
+    margin-right: auto;
     position: relative;
 }
 
 .header__search {
     padding-left: 20px;
-    border: 1px solid gray;
-    width: 624px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    width: 724px;
     height: 52px;
     border-radius: 25px;
-    opacity: 0.4;
+    outline: none;
+    box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
 }
 
 .header__btns {
@@ -107,3 +121,27 @@ body {
 
 /* --- Header__nav --- */
 
+.header__nav {
+    display: flex;
+    padding: 6px 0 0 0;
+}
+
+.header__link {
+    display: flex;
+    align-items: end;
+    height: 48px;
+    width: auto;
+    padding: 0 12px;
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+}
+
+.header__text {
+    padding: 0 0 8px 0;
+    border-bottom: 3px solid transparent
+}
+
+.header__text.active {
+    border-bottom: 3px solid black;
+}
