@@ -36,30 +36,30 @@
                 <form action="" class="header__form">
                     <input type="text" placeholder="Google" class="header__search">
                     <div class="header__btns">
-                        <button type="reset" class="header__button">
-                            <img class="header__icon" src="./Pictures/Xmark.svg" alt="">
+                        <button type="reset" class="header__button header__button--reset">
+                            <img class="header__icon" src="./Pictures/Xmark.svg" alt="Стереть">
                         </button>
                         <div class="header__stick"></div>
                         <button type="button" class="header__button">
-                            <img class="header__icon" src="./Pictures/Keyboard.svg" alt="">
+                            <img class="header__icon" src="./Pictures/Keyboard.svg" alt="Экранная клавиатура">
                         </button>
                         <button type="button" class="header__button">
-                            <img class="header__icon" src="./Pictures/Microphone.svg" alt="">
+                            <img class="header__icon" src="./Pictures/Microphone.svg" alt="Микрофон">
                         </button>
                         <button type="button" class="header__button">
-                            <img class="header__icon" src="./Pictures/Lens.svg" alt="">
+                            <img class="header__icon" src="./Pictures/Lens.svg" alt="Поиск по картинке">
                         </button>
                         <button type="submit" class="header__button">
-                            <img class="header__icon" src="./Pictures/Search.svg" alt="">
+                            <img class="header__icon" src="./Pictures/Search.svg" alt="Поиск">
                         </button>
                     </div>
                 </form>
                 <div class="header__tools">
                     <button class="header__button">
-                        <img class="header__icon" src="./Pictures/Share.svg" alt="">
+                        <img class="header__icon" src="./Pictures/Share.svg" alt="Меню «Больше»">
                     </button>
                     <button class="header__button">
-                        <img class="header__icon" src="./Pictures/Apps.svg" alt="">
+                        <img class="header__icon" src="./Pictures/Apps.svg" alt="Меню инструментов">
                     </button>
                     <button class="header__button">
                         <div class="header__icon"></div>
@@ -68,36 +68,194 @@
             </section>
 
             <nav class="header__nav">
-                <a href="#!" class="header__link">
-                    <span class="header__text">AI Mode</span>
+                <a href="#" class="header__link">
+                    <span class="header__text">
+                        AI Mode
+                    </span>
                 </a>
-                <a href="#!" class="header__link">
-                    <span class="header__text active">All</span>
+                <a href="#" class="header__link">
+                    <span class="header__text active">
+                        All
+                    </span>
                 </a>
-                <a href="#!" class="header__link">
-                    <span class="header__text">Images</span>
+                <a href="#" class="header__link">
+                    <span class="header__text">
+                        Images
+                    </span>
                 </a>
-                <a href="#!" class="header__link">
-                    <span class="header__text">Short videos</span>
+                <a href="#" class="header__link">
+                    <span class="header__text">
+                        Short videos
+                    </span>
                 </a>
-                <a href="#!" class="header__link">
-                    <span class="header__text">Forums</span>
+                <a href="#" class="header__link">
+                    <span class="header__text">
+                        Forums
+                    </span>
                 </a>
-                <a href="#!" class="header__link">
-                    <span class="header__text">Videos</span>
+                <a href="#" class="header__link">
+                    <span class="header__text">
+                        Videos
+                    </span>
                 </a>
-                <a href="#!" class="header__link">
-                    <span class="header__text">News</span>
+                <a href="#" class="header__link">
+                    <span class="header__text">
+                        News
+                    </span>
                 </a>
-                <a href="#!" class="header__link">
-                    <span class="header__text">More</span>
+                <a href="#" class="header__link header__link--menu">
+                    <span class="header__text">
+                        More
+                    </span>
+                    <img src="./Pictures/Triangle.svg" alt="" class="header__triangle">
                 </a>
-                <a href="#!" class="header__link">
-                    <span class="header__text">Tools</span>
+                <a href="#" class="header__link header__link--menu">
+                    <span class="header__text">
+                        Tools
+                    </span>
+                    <img src="./Pictures/Triangle.svg" alt="" class="header__triangle">
                 </a>
             </nav>
         </div>
         <hr class="header__strip">
     </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main-content">
+                <article class="search-result">
+                    <div class="search-result__item">
+                        <div class="search-result__header">
+                            <a href="index.html" class="search-result__link">
+                                <div class="search-result__circle">
+                                    <img src="./Pictures/Google_item.png" alt="Иконка Google" class="search-result__img">
+                                </div>
+                                <div class="search-result__meta">
+                                    Google
+                                    <span class="search-result__hint">https://www.google.com</span>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker">
+                                        <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                        <a href="index.html" class="search-result__link">
+                            <span class="search-result__title">Google</span>
+                        </a>
+                        <p class="search-result__text search-result__text--first">
+                            Search the world's information, including webpages, images, videos and more. <strong class="search-result__bold">Google</strong> has many special features to help you find exactly what you're looking ...
+                        </p>
+                    </div>
+                    <hr class="search-result__line">
+                    <div class="search-result__part">
+                        <a href="#" class="search-result__link search-result__link--secondary">
+                            <span class="search-result__title search-result__title--secondary">
+                                Переводчик
+                            </span>
+                            <p class="search-result__text">
+                                Результаты перевода ... При переводе принимается во ...
+                            </p>
+                        </a>
+                        <button class="search-result__story">
+                            <img src="./Pictures/History.svg" alt="Недавний запрос" class="search-result__icon">
+                        </button>
+                    </div>
+                    <hr class="search-result__line">
+                    <div class="search-result__part">
+                        <a href="#" class="search-result__link search-result__link--secondary">
+                            <span class="search-result__title search-result__title--secondary">
+                                Google Fonts
+                            </span>
+                            <p class="search-result__text">
+                                Making the web more beautiful, fast, and open through great ...
+                            </p>
+                        </a>
+                        <button class="search-result__story">
+                            <img src="./Pictures/History.svg" alt="Недавний запрос" class="search-result__icon">
+                        </button>
+                    </div>
+                    <hr class="search-result__line">
+                    <div class="search-result__part">
+                        <a href="#" class="search-result__link search-result__link--third">
+                            <div class="search-result__info">
+                                <span class="search-result__title search-result__title--secondary">
+                                    Account
+                                </span>
+                                <p class="search-result__text">          
+                                    Sign in to your Google Account and learn how to set up security ...
+                                </p>
+                            </div>
+                            <img src="./Pictures/Arrow_right.svg" alt="Перейти" class="search-result__arrow">
+                        </a>
+                    </div>
+                    <hr class="search-result__line">
+                    <div class="search-result__part">
+                        <a href="#" class="search-result__link search-result__link--third">
+                            <div class="search-result__info">
+                                <span class="search-result__title search-result__title--secondary">
+                                    Account in Google
+                                </span>
+                                <p class="search-result__text">        
+                                    Loading. Sign in. Use your Google Account. Email or phone. Forgot ...
+                                </p>
+                            </div>
+                            <img src="./Pictures/Arrow_right.svg" alt="Перейти" class="search-result__arrow">
+                        </a>
+                    </div>
+                    <hr class="search-result__line">
+                    <div class="search-result__part">
+                        <a href="#" class="search-result__link search-result__link--third">
+                            <div class="search-result__info">
+                                <span class="search-result__title search-result__title--secondary">
+                                    Cloud
+                                </span>
+                                <p class="search-result__text">   
+                                    Meet your business challenges head on with AI and cloud ...
+                                </p>
+                            </div>
+                            <img src="./Pictures/Arrow_right.svg" alt="Перейти" class="search-result__arrow">
+                        </a>
+                    </div>
+                    <hr class="search-result__line">
+                    <div class="search-result__part">
+                        <a href="#" class="search-result__link search-result__link--third">
+                            <div class="search-result__info">
+                                <span class="search-result__title search-result__title--secondary">
+                                    Search
+                                </span>
+                                <p class="search-result__text">
+                                    Uncover what Google Search is, how it works, and the approach ...
+                                </p>
+                            </div>
+                            <img src="./Pictures/Arrow_right.svg" alt="Перейти" class="search-result__arrow">
+                        </a>
+                    </div>
+                    <hr class="search-result__line">
+                </article>
+                <article class="blog-content">
+
+                </article>
+                <article class="search-result">
+
+                </article>
+                <article class="blog-content">
+
+                </article>
+                <article class="search-result">
+
+                </article>
+                <article class="search-content">
+
+                </article>
+                <nav class="search-nav">
+
+                </nav>
+            </div>
+            <hr class="main__line">
+            <aside class="extra-panel">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt officiis, illum, voluptates mollitia eos sequi corrupti ratione recusandae pariatur fugiat optio odit nobis facilis et, libero dicta consectetur autem tempore.
+            </aside>
+        </div>
+    </main>
 </body>
 </html>
