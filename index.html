@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Google</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -34,7 +34,7 @@
                     </svg>
                 </a>
                 <form action="" class="header__form">
-                    <input type="text" placeholder="Google" class="header__search">
+                    <input name="Search" type="text" placeholder="Google" class="header__search">
                     <div class="header__btns">
                         <button type="reset" class="header__button header__button--reset">
                             <img class="header__icon" src="./Pictures/Xmark.svg" alt="Стереть">
@@ -55,14 +55,14 @@
                     </div>
                 </form>
                 <div class="header__tools">
-                    <button class="header__button">
+                    <button type="button" class="header__button header__button--tools">
                         <img class="header__icon" src="./Pictures/Share.svg" alt="Меню «Больше»">
                     </button>
-                    <button class="header__button">
+                    <button type="button" class="header__button header__button--tools">
                         <img class="header__icon" src="./Pictures/Apps.svg" alt="Меню инструментов">
                     </button>
-                    <button class="header__button">
-                        <div class="header__icon"></div>
+                    <button type="button" class="header__button header__button--tools">
+                        <img src="./Pictures/Profile_icon.jpg" alt="Фото профиля" class="header__icon header__icon--profile">
                     </button>
                 </div>
             </section>
@@ -136,11 +136,11 @@
                                 </div>
                             </a>
                             <button type="button" class="search-result__marker">
-                                        <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
                             </button>
                         </div>
                         <a href="index.html" class="search-result__link">
-                            <span class="search-result__title">Google</span>
+                            <span class="search-result__title search-result__title--main">Google</span>
                         </a>
                         <p class="search-result__text search-result__text--first">
                             Search the world's information, including webpages, images, videos and more. <strong class="search-result__bold">Google</strong> has many special features to help you find exactly what you're looking ...
@@ -156,7 +156,7 @@
                                 Результаты перевода ... При переводе принимается во ...
                             </p>
                         </a>
-                        <button class="search-result__story">
+                        <button type="button" class="search-result__story">
                             <img src="./Pictures/History.svg" alt="Недавний запрос" class="search-result__icon">
                         </button>
                     </div>
@@ -231,29 +231,428 @@
                         </a>
                     </div>
                     <hr class="search-result__line">
+                    <div class="search-result__results">
+                        <a href="#" class="search-result__more">
+                            More results from google.com »
+                        </a>
+                    </div>
                 </article>
                 <article class="blog-content">
-
+                    <div class="blog-content__header">
+                        <h2 class="blog-content__title">
+                            What people are saying
+                        </h2>
+                        <div class="blog-content__info">
+                            <div class="blog-content__picture blog-content__picture--first">
+                                <img src="./Pictures/Icon_title_1.png" alt="YouTube" class="blog-content__header-icon">
+                            </div>
+                            <div class="blog-content__picture blog-content__picture--second">
+                                <img src="./Pictures/Icon_title_2 .png" alt="LinkedIN" class="blog-content__header-icon">
+                            </div>
+                            <div class="blog-content__picture blog-content__picture--third">
+                                <img src="./Pictures/Icon_title_3.png" alt="Reddit" class="blog-content__header-icon">
+                            </div>
+                            <p class="blog-content__text">
+                                Trending posts and discussions
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-content__cards">
+                        <div class="blog-content__item">
+                            <a href="#" class="blog-content__link">
+                                <iframe 
+                                    src="https://www.facebook.com/YLENews/videos/google-has-announced-a-13-billion-euros-investment-in-finland-the-search-engine-/1615386670378728/" 
+                                    frameborder="0" 
+                                    class="blog-content__video">
+                                </iframe>
+                                <p class="blog-content__about">
+                                    Google has announced a 13 billion euros investment in Finland, the search engine...
+                                </p>
+                                <div class="blog-content__stats">
+                                        70+ reactions · 11 hours ago
+                                </div>
+                                <div class="blog-content__media">
+                                    <div class="blog-content__file-first">
+                                        <img src="./Pictures/Icon_card_1.png" alt="Yle News" class="blog-content__icon">
+                                    </div>
+                                    <div class="blog-content__file-second">
+                                        <img src="./Pictures/Icon_card_1_1.png" alt="FaceBook" class="blog-content__icon-first">
+                                    </div>
+                                    <div class="blog-content__social">
+                                        <span class="blog-content__name">
+                                            YLENews
+                                        </span>
+                                        <span class="blog-content__brand">
+                                            Facebook
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker search-result__marker--blog">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                        <div class="blog-content__item">
+                            <a href="#" class="blog-content__link">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/UzvTJSuFsWA" 
+                                    frameborder="0" 
+                                    class="blog-content__video">
+                                </iframe>
+                                <p class="blog-content__about">
+                                    Gemini 3.8 Flash Is HERE – Testing Google’s BEST Model Yet!
+                                </p>
+                                <div class="blog-content__stats">
+                                    61.5K+ views · 2 days ago
+                                </div>
+                                <div class="blog-content__media">
+                                    <div class="blog-content__file-first">
+                                        <img src="./Pictures/Bijan_1.jpeg" alt="Bijan Bowen" class="blog-content__icon">
+                                    </div>
+                                    <div class="blog-content__file-second">
+                                        <img src="./Pictures/Youtube_icon.png" alt="YouTube" class="blog-content__icon-first">
+                                    </div>
+                                    <div class="blog-content__social">
+                                        <span class="blog-content__name">
+                                            Bijan Bowen
+                                        </span>
+                                        <span class="blog-content__brand">
+                                            YouTube
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker search-result__marker--blog">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                        <div class="blog-content__item">
+                            <a href="#" class="blog-content__link">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/ORVlgrc5Kjs" 
+                                    frameborder="0" 
+                                    class="blog-content__video">
+                                </iframe>
+                                <p class="blog-content__about">
+                                    Google Pics Is Here (And It's A LOT Of Fun)
+                                </p>
+                                <div class="blog-content__stats">
+                                        400+ views · 18 hours ago
+                                </div>
+                                <div class="blog-content__media">
+                                    <div class="blog-content__file-first">
+                                        <img src="./Pictures/Surya_1.jpeg" alt="AI with Surya" class="blog-content__icon">
+                                    </div>
+                                    <div class="blog-content__file-second">
+                                        <img src="./Pictures/Youtube_icon.png" alt="YouTube" class="blog-content__icon-first">
+                                    </div>
+                                    <div class="blog-content__social">
+                                        <span class="blog-content__name">
+                                            AI with Surya
+                                        </span>
+                                        <span class="blog-content__brand">
+                                            YouTube
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker search-result__marker--blog">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                    </div>
                 </article>
                 <article class="search-result">
-
+                    <div class="search-result__item">
+                        <div class="search-result__header">
+                            <a href="index.html" class="search-result__link">
+                                <div class="search-result__circle">
+                                    <img src="./Pictures/Google_logo_1.png" alt="Иконка Google" class="search-result__img">
+                                </div>
+                                <div class="search-result__meta">
+                                    google.rs
+                                    <span class="search-result__hint">https://accounts.google.rs</span>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                        <a href="index.html" class="search-result__link">
+                            <span class="search-result__title search-result__title--main">Google Accounts: Sign in</span>
+                        </a>
+                        <p class="search-result__text search-result__text--first">
+                            Loading. <strong class="search-result__bold">Sign in.</strong> Use your Google Account. Email or phone. Forgot email? CAPTCHA image of text used to distinguish humans from robots. <a href="#" class="search-result__read-more">Read more</a>
+                        </p>
+                    </div>
+                    <div class="search-result__item">
+                        <div class="search-result__header">
+                            <a href="index.html" class="search-result__link">
+                                <div class="search-result__circle">
+                                    <img src="./Pictures/Google_logo_2.png" alt="Иконка Google" class="search-result__img">
+                                </div>
+                                <div class="search-result__meta">
+                                    About Google
+                                    <span class="search-result__hint">https://about.google</span>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                        <a href="index.html" class="search-result__link">
+                            <span class="search-result__title search-result__title--main">About Google: Our products, technology and company ...</span>
+                        </a>
+                        <p class="search-result__text search-result__text--first">
+                            Learn more about <strong class="search-result__bold">Google</strong>. Explore our innovative AI products and services, and how we're using technology to help improve lives around the world.
+                        </p>
+                    </div>
+                    <div class="search-result__item">
+                        <div class="search-result__header">
+                            <a href="index.html" class="search-result__link">
+                                <div class="search-result__circle">
+                                    <img src="./Pictures/Google_logo_3.png" alt="Иконка Google" class="search-result__img">
+                                </div>
+                                <div class="search-result__meta">
+                                    blog.google
+                                    <span class="search-result__hint">https://blog.google</span>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                        <a href="index.html" class="search-result__link">
+                            <span class="search-result__title search-result__title--main">News from Google | Google Product and Technology News ...</span>
+                        </a>
+                        <p class="search-result__text search-result__text--first">
+                            Get the latest news and stories about <strong class="search-result__bold">Google</strong> products, technology and innovation on News from Google, Google's official blog.
+                        </p>
+                    </div>
                 </article>
                 <article class="blog-content">
-
+                    <div class="blog-content__header blog-content__header--second">
+                        <h2 class="blog-content__title">
+                            Latest posts from Google
+                        </h2>
+                        <div class="blog-content__info blog-content__info--second">
+                            <button type="button" class="search-result__marker">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                            <button type="button" class="blog-content__button">
+                                <img src="./Pictures/Arrow_up.svg" alt="Свернуть" class="blog-content__arrow">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="blog-content__cards">
+                        <div class="blog-content__item">
+                            <a href="#" class="blog-content__link">
+                                <p class="blog-content__about">
+                                    Tired of the endless scroll? Meet Dreambeans, an experiment from @GoogleLabs that curates personalized collections of stories to inspire your day based on your day based on your enabled connected apps, now including Gemini. Dive deeper into any story...
+                                </p>
+                                <div class="blog-content__stats">
+                                        270+ likes · 23 hours ago
+                                </div>
+                                <div class="blog-content__media">
+                                    <div class="blog-content__file-first">
+                                        <img src="./Pictures/Google_card_icon.jpeg" alt="Google" class="blog-content__icon">
+                                    </div>
+                                    <div class="blog-content__file-second">
+                                        <img src="./Pictures/X-icon.png" alt="X" class="blog-content__icon-first">
+                                    </div>
+                                    <div class="blog-content__social">
+                                        <span class="blog-content__name">
+                                            Google
+                                        </span>
+                                        <span class="blog-content__brand">
+                                            X
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker search-result__marker--blog">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                        <div class="blog-content__item">
+                            <a href="#" class="blog-content__link">
+                                <p class="blog-content__about">
+                                    Today, we’re making transferring your password and passkeys between password managers easier and safer on Android — no file downloads required.
+                                    <br>
+                                    <br>
+                                    Here’s how you can make the switch on compatible managers...
+                                </p>
+                                <div class="blog-content__stats">
+                                    1.6K+ likes · 1 day ago
+                                </div>
+                                <div class="blog-content__media">
+                                    <div class="blog-content__file-first">
+                                        <img src="./Pictures/Google_card_icon.jpeg" alt="Google" class="blog-content__icon">
+                                    </div>
+                                    <div class="blog-content__file-second">
+                                        <img src="./Pictures/X-icon.png" alt="X" class="blog-content__icon-first">
+                                    </div>
+                                    <div class="blog-content__social">
+                                        <span class="blog-content__name">
+                                            Google
+                                        </span>
+                                        <span class="blog-content__brand">
+                                            X
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker search-result__marker--blog">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                        <div class="blog-content__item">
+                            <a href="#" class="blog-content__link">
+                                <iframe 
+                                    src="https://x.com/Google/status/2098084519320383940?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Etweet" 
+                                    frameborder="0" 
+                                    class="blog-content__video">
+                                </iframe>
+                                <p class="blog-content__about">
+                                    The @GeminiApp is now available for Windows<br>...
+                                </p>
+                                <div class="blog-content__stats">
+                                    1.2K+ likes · 1 day ago
+                                </div>
+                                <div class="blog-content__media">
+                                    <div class="blog-content__file-first">
+                                        <img src="./Pictures/Google_card_icon.jpeg" alt="Google" class="blog-content__icon">
+                                    </div>
+                                    <div class="blog-content__file-second">
+                                        <img src="./Pictures/X-icon.png" alt="X" class="blog-content__icon-first">
+                                    </div>
+                                    <div class="blog-content__social">
+                                        <span class="blog-content__name">
+                                            X
+                                        </span>
+                                        <span class="blog-content__brand">
+                                            Google
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker search-result__marker--blog">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                    </div>
                 </article>
                 <article class="search-result">
-
+                    <div class="search-result__item">
+                        <div class="search-result__header">
+                            <a href="index.html" class="search-result__link">
+                                <div class="search-result__circle">
+                                    <img src="./Pictures/Wiki_icon.png" alt="Иконка Google" class="search-result__img">
+                                </div>
+                                <div class="search-result__meta">
+                                    Wikipedia
+                                    <span class="search-result__hint">https://en.wikipedia.org</span>
+                                </div>
+                            </a>
+                            <button type="button" class="search-result__marker">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                        <a href="index.html" class="search-result__link">
+                            <span class="search-result__title search-result__title--main">Google</span>
+                        </a>
+                        <p class="search-result__text search-result__text--first">
+                            <strong class="search-result__bold">Google</strong> is the largest provider of search engines, mapping and navigation applications, email services, office suites, online video platforms, photo and cloud ... <a href="#" class="search-result__read-more">Read more</a>
+                        </p>
+                    </div>
                 </article>
                 <article class="search-content">
+                    <div class="blog-content__header blog-content__header--second">
+                        <h2 class="blog-content__title">
+                            People also search for
+                        </h2>
+                        <div class="blog-content__info blog-content__info--second">
 
+                        </div>
+                    </div>
+                    <div class="search-content__cards">
+                        <div class="search-content__group">
+                            <div class="search-content__item">
+                                <a href="#" class="search-content__link">
+                                    <p class="search-content__text">
+                                        <strong class="search-result__bold">Www</strong> Google <strong class="search-result__bold">Search web</strong>
+                                    </p>
+                                    <img src="./Pictures/Search.svg" alt="Поиск" class="search-content__img">
+                                </a>
+                            </div>
+                            <div class="search-content__item">
+                                <a href="#" class="search-content__link">
+                                    <p class="search-content__text">
+                                        <strong class="search-result__bold">WWW</strong> Google <strong class="search-result__bold">com SG</strong>
+                                    </p>
+                                    <img src="./Pictures/Search.svg" alt="Поиск" class="search-content__img">
+                                </a>
+                            </div>
+                            <div class="search-content__item">
+                                <a href="#" class="search-content__link">
+                                    <p class="search-content__text">
+                                        Google <strong class="search-result__bold">account</strong>
+                                    </p>
+                                    <img src="./Pictures/Search.svg" alt="Поиск" class="search-content__img">
+                                </a>
+                            </div>
+                            <div class="search-content__item">
+                                <a href="#" class="search-content__link">
+                                    <p class="search-content__text">
+                                        <strong class="search-result__bold">Www</strong> Google <strong class="search-result__bold">com search video</strong>
+                                    </p>
+                                    <img src="./Pictures/Search.svg" alt="Поиск" class="search-content__img">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="search-content__group">
+                            <div class="search-content__item">
+                                <a href="#" class="search-content__link">
+                                    <p class="search-content__text">
+                                        <strong class="search-result__bold">Www</strong> Google <strong class="search-result__bold">com URL</strong>
+                                    </p>
+                                    <img src="./Pictures/Search.svg" alt="Поиск" class="search-content__img">
+                                </a>
+                            </div>
+                            <div class="search-content__item">
+                                <a href="#" class="search-content__link">
+                                    <p class="search-content__text">
+                                        Google <strong class="search-result__bold">com video</strong>
+                                    </p>
+                                    <img src="./Pictures/Search.svg" alt="Поиск" class="search-content__img">
+                                </a>
+                            </div>
+                            <div class="search-content__item">
+                                <a href="#" class="search-content__link">
+                                    <p class="search-content__text">
+                                        Google <strong class="search-result__bold">search image</strong>
+                                    </p>
+                                    <img src="./Pictures/Search.svg" alt="Поиск" class="search-content__img">
+                                </a>
+                            </div>
+                            <div class="search-content__item">
+                                <a href="#" class="search-content__link">
+                                    <p class="search-content__text">
+                                        Google <strong class="search-result__bold">com search p</strong>
+                                    </p>
+                                    <img src="./Pictures/Search.svg" alt="Поиск" class="search-content__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </article>
                 <nav class="search-nav">
 
                 </nav>
             </div>
-            <hr class="main__line">
             <aside class="extra-panel">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt officiis, illum, voluptates mollitia eos sequi corrupti ratione recusandae pariatur fugiat optio odit nobis facilis et, libero dicta consectetur autem tempore.
+                
             </aside>
         </div>
     </main>
