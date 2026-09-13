@@ -33,20 +33,20 @@
                         </path>
                     </svg>
                 </a>
-                <form action="" class="header__form">
+                <form action="#" class="header__form">
                     <input name="Search" type="text" placeholder="Google" class="header__search">
                     <div class="header__btns">
                         <button type="reset" class="header__button header__button--reset">
                             <img class="header__icon" src="./Pictures/Xmark.svg" alt="Стереть">
                         </button>
                         <div class="header__stick"></div>
-                        <button type="button" class="header__button">
+                        <button type="button" class="header__button header__button--keyboard">
                             <img class="header__icon" src="./Pictures/Keyboard.svg" alt="Экранная клавиатура">
                         </button>
-                        <button type="button" class="header__button">
+                        <button type="button" class="header__button header__button--micro">
                             <img class="header__icon" src="./Pictures/Microphone.svg" alt="Микрофон">
                         </button>
-                        <button type="button" class="header__button">
+                        <button type="button" class="header__button header__button--photoes">
                             <img class="header__icon" src="./Pictures/Lens.svg" alt="Поиск по картинке">
                         </button>
                         <button type="submit" class="header__button">
@@ -66,59 +66,62 @@
                     </button>
                 </div>
             </section>
-
-            <nav class="header__nav">
-                <a href="#" class="header__link">
-                    <span class="header__text">
-                        AI Mode
-                    </span>
-                </a>
-                <a href="#" class="header__link">
-                    <span class="header__text active">
-                        All
-                    </span>
-                </a>
-                <a href="#" class="header__link">
-                    <span class="header__text">
-                        Images
-                    </span>
-                </a>
-                <a href="#" class="header__link">
-                    <span class="header__text">
-                        Short videos
-                    </span>
-                </a>
-                <a href="#" class="header__link">
-                    <span class="header__text">
-                        Forums
-                    </span>
-                </a>
-                <a href="#" class="header__link">
-                    <span class="header__text">
-                        Videos
-                    </span>
-                </a>
-                <a href="#" class="header__link">
-                    <span class="header__text">
-                        News
-                    </span>
-                </a>
-                <a href="#" class="header__link header__link--menu">
-                    <span class="header__text">
-                        More
-                    </span>
-                    <img src="./Pictures/Triangle.svg" alt="" class="header__triangle">
-                </a>
-                <a href="#" class="header__link header__link--menu">
-                    <span class="header__text">
-                        Tools
-                    </span>
-                    <img src="./Pictures/Triangle.svg" alt="" class="header__triangle">
-                </a>
-            </nav>
         </div>
-        <hr class="header__strip">
     </header>
+
+    <div class="container">
+        <nav class="header__nav">
+            <a href="#" class="header__link">
+                <span class="header__text">
+                    AI Mode
+                </span>
+            </a>
+            <a href="#" class="header__link">
+                <span class="header__text active">
+                    All
+                </span>
+            </a>
+            <a href="#" class="header__link">
+                <span class="header__text">
+                    Images
+                </span>
+            </a>
+            <a href="#" class="header__link">
+                <span class="header__text">
+                    Short videos
+                </span>
+            </a>
+            <a href="#" class="header__link">
+                <span class="header__text">
+                    Forums
+                </span>
+            </a>
+            <a href="#" class="header__link">
+                <span class="header__text">
+                    Videos
+                </span>
+            </a>
+            <a href="#" class="header__link">
+                <span class="header__text">
+                    News
+                </span>
+            </a>
+            <a href="#" class="header__link header__link--menu">
+                <span class="header__text">
+                    More
+                </span>
+                <img src="./Pictures/Triangle.svg" alt="" class="header__triangle">
+            </a>
+            <a href="#" class="header__link header__link--menu">
+                <span class="header__text">
+                    Tools
+                </span>
+                <img src="./Pictures/Triangle.svg" alt="" class="header__triangle">
+            </a>
+        </nav>
+    </div>
+
+    <hr class="header__strip">
 
     <main class="main">
         <div class="container">
@@ -247,7 +250,7 @@
                                 <img src="./Pictures/Icon_title_1.png" alt="YouTube" class="blog-content__header-icon">
                             </div>
                             <div class="blog-content__picture blog-content__picture--second">
-                                <img src="./Pictures/Icon_title_2 .png" alt="LinkedIN" class="blog-content__header-icon">
+                                <img src="./Pictures/Icon_title_2.png" alt="LinkedIN" class="blog-content__header-icon">
                             </div>
                             <div class="blog-content__picture blog-content__picture--third">
                                 <img src="./Pictures/Icon_title_3.png" alt="Reddit" class="blog-content__header-icon">
@@ -259,103 +262,109 @@
                     </div>
                     <div class="blog-content__cards">
                         <div class="blog-content__item">
-                            <a href="#" class="blog-content__link">
+                            <div class="blog-content__web">
                                 <iframe 
                                     src="https://www.facebook.com/YLENews/videos/google-has-announced-a-13-billion-euros-investment-in-finland-the-search-engine-/1615386670378728/" 
                                     frameborder="0" 
                                     class="blog-content__video">
                                 </iframe>
-                                <p class="blog-content__about">
-                                    Google has announced a 13 billion euros investment in Finland, the search engine...
-                                </p>
-                                <div class="blog-content__stats">
-                                        70+ reactions · 11 hours ago
-                                </div>
-                                <div class="blog-content__media">
-                                    <div class="blog-content__file-first">
-                                        <img src="./Pictures/Icon_card_1.png" alt="Yle News" class="blog-content__icon">
+                                <a href="#" class="blog-content__link">
+                                    <p class="blog-content__about">
+                                        Google has announced a 13 billion euros investment in Finland, the search engine...
+                                    </p>
+                                    <div class="blog-content__stats">
+                                            70+ reactions · 11 hours ago
                                     </div>
-                                    <div class="blog-content__file-second">
-                                        <img src="./Pictures/Icon_card_1_1.png" alt="FaceBook" class="blog-content__icon-first">
+                                    <div class="blog-content__media">
+                                        <div class="blog-content__file-first">
+                                            <img src="./Pictures/Icon_card_1.png" alt="Yle News" class="blog-content__icon">
+                                        </div>
+                                        <div class="blog-content__file-second">
+                                            <img src="./Pictures/Icon_card_1_1.png" alt="FaceBook" class="blog-content__icon-first">
+                                        </div>
+                                        <div class="blog-content__social">
+                                            <span class="blog-content__name">
+                                                YLENews
+                                            </span>
+                                            <span class="blog-content__brand">
+                                                Facebook
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="blog-content__social">
-                                        <span class="blog-content__name">
-                                            YLENews
-                                        </span>
-                                        <span class="blog-content__brand">
-                                            Facebook
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                             <button type="button" class="search-result__marker search-result__marker--blog">
                                 <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
                             </button>
                         </div>
                         <div class="blog-content__item">
-                            <a href="#" class="blog-content__link">
+                            <div class="blog-content__web">
                                 <iframe 
                                     src="https://www.youtube.com/embed/UzvTJSuFsWA" 
                                     frameborder="0" 
                                     class="blog-content__video">
                                 </iframe>
-                                <p class="blog-content__about">
-                                    Gemini 3.8 Flash Is HERE – Testing Google’s BEST Model Yet!
-                                </p>
-                                <div class="blog-content__stats">
-                                    61.5K+ views · 2 days ago
-                                </div>
-                                <div class="blog-content__media">
-                                    <div class="blog-content__file-first">
-                                        <img src="./Pictures/Bijan_1.jpeg" alt="Bijan Bowen" class="blog-content__icon">
+                                <a href="#" class="blog-content__link">
+                                    <p class="blog-content__about">
+                                        Gemini 3.8 Flash Is HERE – Testing Google’s BEST Model Yet!
+                                    </p>
+                                    <div class="blog-content__stats">
+                                        61.5K+ views · 2 days ago
                                     </div>
-                                    <div class="blog-content__file-second">
-                                        <img src="./Pictures/Youtube_icon.png" alt="YouTube" class="blog-content__icon-first">
+                                    <div class="blog-content__media">
+                                        <div class="blog-content__file-first">
+                                            <img src="./Pictures/Bijan_1.jpeg" alt="Bijan Bowen" class="blog-content__icon">
+                                        </div>
+                                        <div class="blog-content__file-second">
+                                            <img src="./Pictures/Youtube_icon.png" alt="YouTube" class="blog-content__icon-first">
+                                        </div>
+                                        <div class="blog-content__social">
+                                            <span class="blog-content__name">
+                                                Bijan Bowen
+                                            </span>
+                                            <span class="blog-content__brand">
+                                                YouTube
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="blog-content__social">
-                                        <span class="blog-content__name">
-                                            Bijan Bowen
-                                        </span>
-                                        <span class="blog-content__brand">
-                                            YouTube
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                             <button type="button" class="search-result__marker search-result__marker--blog">
                                 <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
                             </button>
                         </div>
                         <div class="blog-content__item">
-                            <a href="#" class="blog-content__link">
+                            <div class="blog-content__web">
                                 <iframe 
                                     src="https://www.youtube.com/embed/ORVlgrc5Kjs" 
                                     frameborder="0" 
                                     class="blog-content__video">
                                 </iframe>
-                                <p class="blog-content__about">
-                                    Google Pics Is Here (And It's A LOT Of Fun)
-                                </p>
-                                <div class="blog-content__stats">
-                                        400+ views · 18 hours ago
-                                </div>
-                                <div class="blog-content__media">
-                                    <div class="blog-content__file-first">
-                                        <img src="./Pictures/Surya_1.jpeg" alt="AI with Surya" class="blog-content__icon">
+                                <a href="#" class="blog-content__link">
+                                    <p class="blog-content__about">
+                                        Google Pics Is Here (And It's A LOT Of Fun)
+                                    </p>
+                                    <div class="blog-content__stats">
+                                            400+ views · 18 hours ago
                                     </div>
-                                    <div class="blog-content__file-second">
-                                        <img src="./Pictures/Youtube_icon.png" alt="YouTube" class="blog-content__icon-first">
+                                    <div class="blog-content__media">
+                                        <div class="blog-content__file-first">
+                                            <img src="./Pictures/Surya_1.jpeg" alt="AI with Surya" class="blog-content__icon">
+                                        </div>
+                                        <div class="blog-content__file-second">
+                                            <img src="./Pictures/Youtube_icon.png" alt="YouTube" class="blog-content__icon-first">
+                                        </div>
+                                        <div class="blog-content__social">
+                                            <span class="blog-content__name">
+                                                AI with Surya
+                                            </span>
+                                            <span class="blog-content__brand">
+                                                YouTube
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="blog-content__social">
-                                        <span class="blog-content__name">
-                                            AI with Surya
-                                        </span>
-                                        <span class="blog-content__brand">
-                                            YouTube
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                             <button type="button" class="search-result__marker search-result__marker--blog">
                                 <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
                             </button>
@@ -507,35 +516,37 @@
                             </button>
                         </div>
                         <div class="blog-content__item">
-                            <a href="#" class="blog-content__link">
+                            <div class="blog-content__web">
                                 <iframe 
                                     src="https://x.com/Google/status/2098084519320383940?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Etweet" 
                                     frameborder="0" 
                                     class="blog-content__video">
                                 </iframe>
-                                <p class="blog-content__about">
-                                    The @GeminiApp is now available for Windows<br>...
-                                </p>
-                                <div class="blog-content__stats">
-                                    1.2K+ likes · 1 day ago
-                                </div>
-                                <div class="blog-content__media">
-                                    <div class="blog-content__file-first">
-                                        <img src="./Pictures/Google_card_icon.jpeg" alt="Google" class="blog-content__icon">
+                                <a href="#" class="blog-content__link">
+                                    <p class="blog-content__about">
+                                        The @GeminiApp is now available for Windows<br>...
+                                    </p>
+                                    <div class="blog-content__stats">
+                                        1.2K+ likes · 1 day ago
                                     </div>
-                                    <div class="blog-content__file-second">
-                                        <img src="./Pictures/X-icon.png" alt="X" class="blog-content__icon-first">
+                                    <div class="blog-content__media">
+                                        <div class="blog-content__file-first">
+                                            <img src="./Pictures/Google_card_icon.jpeg" alt="Google" class="blog-content__icon">
+                                        </div>
+                                        <div class="blog-content__file-second">
+                                            <img src="./Pictures/X-icon.png" alt="X" class="blog-content__icon-first">
+                                        </div>
+                                        <div class="blog-content__social">
+                                            <span class="blog-content__name">
+                                                X
+                                            </span>
+                                            <span class="blog-content__brand">
+                                                Google
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="blog-content__social">
-                                        <span class="blog-content__name">
-                                            X
-                                        </span>
-                                        <span class="blog-content__brand">
-                                            Google
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                             <button type="button" class="search-result__marker search-result__marker--blog">
                                 <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
                             </button>
@@ -734,7 +745,174 @@
                 </nav>
             </div>
             <aside class="extra-panel">
-                
+                <article class="promotions">
+                    <div class="promotions__header">
+                        <h2 class="promotions__title">
+                            Google
+                        </h2>
+                        <div class="promotions__more">
+                            <span class="promotions__tech">
+                                Technology corporation
+                            </span>
+                            <button type="button" class="search-result__marker">
+                                <img src="./Pictures/More.svg" alt="Раздел «Больше»" class="search-result__about">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="promotions__picture">
+                        <img src="./Pictures/Promotion-1.webp" alt="" class="promotions__img">
+                        <div class="promotions__group">
+                            <img src="./Pictures/Promotion-2.webp" alt="" class="promotions__img">
+                            <img src="./Pictures/Promotion-3.webp" alt="" class="promotions__img">
+                        </div>
+                        <button type="button" class="promotions__more-img">
+                            <img src="./Pictures/More-img.svg" alt="Больше изображений" class="promotions__icon">
+                        </button>
+                    </div>
+                    <p class="promotions__text">
+                        Google LLC is an American multinational technology corporation focused on information technology, online advertising, search engine technology, email, cloud computing, software, quantum computing, e-commerce, consumer electronics, and artificial intelligence.
+                    </p>
+                    <div class="promotions__source">
+                        <span class="promotions__name">Source:</span>
+                        <a href="#" class="promotions__web">
+                            Wikipedia
+                        </a>
+                    </div>
+                    <div class="promotions__info">
+                        <div class="promotions__card">
+                            <span class="promotions__card-name">
+                                Founders
+                            </span>
+                            <a href="#" class="promotions__link">
+                                <span class="promotions__link-decoration">Larry Page, Sergey Brin</span>
+                            </a>
+                        </div>
+                        <div class="promotions__card">
+                            <span class="promotions__card-name">
+                                Founded
+                            </span>
+                            <a href="#" class="promotions__link">
+                                September 4, 1998, <span class="promotions__link-decoration">Menlo Park, California, United States</span>
+                            </a>
+                        </div>
+                        <div class="promotions__card">
+                            <span class="promotions__card-name">
+                                Headquarters
+                            </span>
+                            <a href="#" class="promotions__link">
+                                <span class="promotions__link-decoration">Mountain View, California, United States</span>
+                            </a>
+                        </div>
+                        <div class="promotions__card">
+                            <span class="promotions__card-name">
+                                CEO
+                            </span>
+                            <a href="#" class="promotions__link">
+                                <span class="promotions__link-decoration">Sundar Pichai</span> (Oct 2, 2015–)
+                            </a>
+                        </div>
+                        <div class="promotions__card">
+                            <span class="promotions__card-name">
+                                CFO
+                            </span>
+                            <a href="#" class="promotions__link">          
+                                <span class="promotions__link-decoration">Anat Ashkenazi</span>
+                            </a>
+                        </div>
+                        <div class="promotions__card">
+                            <span class="promotions__card-name">
+                                CIO
+                            </span>
+                            <a href="#" class="promotions__link">              
+                                <span class="promotions__link-decoration">Ruth Porat</span>
+                            </a>
+                        </div>
+                        <div class="promotions__card">
+                            <span class="promotions__card-name">
+                                CMO
+                            </span>
+                            <a href="#" class="promotions__link">
+                                <span class="promotions__link-decoration">Lorraine Twohill</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <hr class="extra-panel__strip">
+                <article class="profiles">
+                    <h2 class="profiles__title">
+                        Profiles
+                    </h2>
+                    <div class="profiles__cards">
+                        <a href="#" class="profiles__item">
+                            <div class="profiles__picture">
+                                <img src="./Pictures/inst-logo.svg" alt="Instagram" class="profiles__img">
+                            </div>
+                            <span class="profiles__name">
+                                Instagram
+                            </span>
+                        </a>
+                        <a href="#" class="profiles__item">
+                            <div class="profiles__picture">
+                                <img src="./Pictures/Youtube-logo.svg" alt="YouTube" class="profiles__img">
+                            </div>
+                            <span class="profiles__name">
+                                YouTube
+                            </span>
+                        </a>
+                        <a href="#" class="profiles__item">
+                            <div class="profiles__picture">
+                                <img src="./Pictures/facebook-logo.svg" alt="Facebook" class="profiles__img">
+                            </div>
+                            <span class="profiles__name">
+                                Facebook
+                            </span>
+                        </a>
+                        <a href="#" class="profiles__item">
+                            <div class="profiles__picture">
+                                <img src="./Pictures/X-logo.svg" alt="X" class="profiles__img">
+                            </div>
+                            <span class="profiles__name">
+                                X (Twitter)
+                            </span>
+                        </a>
+                    </div>
+                </article>
+                <hr class="extra-panel__strip">
+                <article class="social">
+                    <h2 class="profiles__title">
+                        People also search for
+                    </h2>
+                    <div class="social__cards">
+                        <a href="#" class="social__item">
+                            <img src="./Pictures/inst-img.avif" alt="Instagram" class="social__img">
+                            <span class="social__name">
+                                Instagram
+                            </span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <img src="./Pictures/youtube-img.avif" alt="YouTube" class="social__img">
+                            <span class="social__name">
+                                YouTube
+                            </span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <img src="./Pictures/facebook-img.png" alt="Facebook" class="social__img">
+                            <span class="social__name">
+                                Facebook
+                            </span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <img src="./Pictures/x-img.avif" alt="X" class="social__img">
+                            <span class="social__name">
+                                X
+                            </span>
+                        </a>
+                    </div>
+                    <button class="social__more">
+                        <span class="social__see-more">See more</span>
+                        <img src="./Pictures/Arrow_right.svg" alt="See more" class="social__icon">
+                    </button>
+                </article>
             </aside>
         </div>
     </main>
